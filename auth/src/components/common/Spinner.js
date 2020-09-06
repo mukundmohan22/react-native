@@ -1,0 +1,23 @@
+import React from 'react';
+import {StyleSheet, View, ActivityIndicator} from 'react-native';
+
+const Spinner = ({size}) => {
+  return (
+    <View style={styles.spinnerStyle}>
+      <ActivityIndicator size={size} />
+    </View>
+  );
+};
+Spinner.defaultProps = {
+  size: 'large',
+};
+
+export {Spinner};
+
+const styles = StyleSheet.create({
+  spinnerStyle: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
