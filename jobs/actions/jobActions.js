@@ -30,7 +30,7 @@ export const fetchJobs = (region, callBack) => async (dispatch) => {
   try {
     let zipcode = await reverseGeocode(
       region,
-      "AIzaSyBXCRvqPFReaOEhko-xZy9O747PcdKBy1E"
+      "YOUR API KEY"
     );
     const url = buildJobsUrl(zipcode);
     let data = DUMMY_DATA;
